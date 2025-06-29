@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AHK Website</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+    <body class="bg-gray-50 m-0 font-sans">
+        <nav class="bg-black py-3">
+            <div class="container mx-auto flex flex-wrap justify-center">
+                <a href="/" class="text-white hover:text-yellow-400 px-4 py-2 rounded transition-colors duration-200 font-medium">Home</a>
+                <a href="/about" class="text-white hover:text-yellow-400 px-4 py-2 rounded transition-colors duration-200 font-medium">About us</a>
+                <a href="/services" class="text-white hover:text-yellow-400 px-4 py-2 rounded transition-colors duration-200 font-medium">Our Services</a>
+                <a href="/partners" class="text-white hover:text-yellow-400 px-4 py-2 rounded transition-colors duration-200 font-medium">Partners</a>
+                <a href="/news" class="text-white hover:text-yellow-400 px-4 py-2 rounded transition-colors duration-200 font-medium">News & Events</a>
+                <a href="/support" class="text-white hover:text-yellow-400 px-4 py-2 rounded transition-colors duration-200 font-medium">Support us</a>
+                <a href="/join" class="text-white hover:text-yellow-400 px-4 py-2 rounded transition-colors duration-200 font-medium">Join us</a>
+                <a href="/contact" class="text-white hover:text-yellow-400 px-4 py-2 rounded transition-colors duration-200 font-medium">Contact us</a>
+            </div>
+        </nav>
+        <hr class="border-gray-700 m-0">
+        {% block content %}{% endblock %}
+    </body>
+</html>
