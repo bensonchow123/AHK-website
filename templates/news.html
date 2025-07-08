@@ -1,3 +1,176 @@
-{% extends "base.html" %}
-{% block content %}
-{% endblock %}
+<div class="container mx-auto px-4">
+    <div class="text-center max-w-3xl mx-auto mb-16">
+        <h1 class="text-3xl font-bold mb-6 text-yellow-600">News & Events</h1>
+        <p class="text-xl text-gray-700">Stay updated with our latest news, upcoming events, and past activities.</p>
+    </div>
+    
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+        <!-- News Section -->
+        <div class="lg:col-span-1">
+            <h2 class="text-2xl font-bold mb-6 text-yellow-600 border-b-2 border-yellow-400 pb-2">Latest News</h2>
+            
+            <!-- News Item 1 -->
+            <div class="bg-white rounded-lg overflow-hidden shadow-lg mb-6">
+                <img src="https://picsum.photos/seed/news1/400/200" alt="Foundation Launches New Initiative" class="w-full h-48 object-cover">
+                <div class="p-4">
+                    <div class="text-sm text-gray-500 mb-2">December 15, 2024</div>
+                    <h3 class="text-lg font-bold mb-2 text-yellow-600">Foundation Launches New Initiative</h3>
+                    <p class="text-gray-700 text-sm mb-3">Amazing Hong Kong Foundation announces a groundbreaking new program to support local communities...</p>
+                    <a href="#" class="text-yellow-600 hover:text-yellow-700 text-sm font-medium">Read More →</a>
+                </div>
+            </div>
+            
+            <!-- News Item 2 -->
+            <div class="bg-white rounded-lg overflow-hidden shadow-lg mb-6">
+                <img src="https://picsum.photos/seed/news2/400/200" alt="Volunteer Recognition Awards" class="w-full h-48 object-cover">
+                <div class="p-4">
+                    <div class="text-sm text-gray-500 mb-2">November 28, 2024</div>
+                    <h3 class="text-lg font-bold mb-2 text-yellow-600">Volunteer Recognition Awards</h3>
+                    <p class="text-gray-700 text-sm mb-3">We celebrated our outstanding volunteers at the annual recognition ceremony held last weekend...</p>
+                    <a href="#" class="text-yellow-600 hover:text-yellow-700 text-sm font-medium">Read More →</a>
+                </div>
+            </div>
+            
+            <!-- News Item 3 -->
+            <div class="bg-white rounded-lg overflow-hidden shadow-lg mb-6">
+                <img src="https://picsum.photos/seed/news3/400/200" alt="Partnership Announcement" class="w-full h-48 object-cover">
+                <div class="p-4">
+                    <div class="text-sm text-gray-500 mb-2">November 10, 2024</div>
+                    <h3 class="text-lg font-bold mb-2 text-yellow-600">New Partnership Announcement</h3>
+                    <p class="text-gray-700 text-sm mb-3">We're excited to announce our new partnership with local educational institutions to expand our reach...</p>
+                    <a href="#" class="text-yellow-600 hover:text-yellow-700 text-sm font-medium">Read More →</a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Upcoming Events Section -->
+        <div class="lg:col-span-1">
+            <h2 class="text-2xl font-bold mb-6 text-yellow-600 border-b-2 border-yellow-400 pb-2">Upcoming Events</h2>
+            
+            <!-- Event 1 -->
+            <div class="bg-white rounded-lg shadow-lg p-4 mb-4">
+                <div class="flex items-start">
+                    <div class="bg-yellow-400 text-black text-center rounded-lg p-2 mr-4 flex-shrink-0">
+                        <div class="text-xs font-medium">JAN</div>
+                        <div class="text-lg font-bold">15</div>
+                    </div>
+                    <div class="flex-1">
+                        <h3 class="text-lg font-bold mb-1 text-yellow-600">Community Workshop</h3>
+                        <p class="text-sm text-gray-500 mb-2">10:00 AM - 4:00 PM</p>
+                        <p class="text-gray-700 text-sm">Join us for an interactive workshop on community engagement and volunteer training.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Event 2 -->
+            <div class="bg-white rounded-lg shadow-lg p-4 mb-4">
+                <div class="flex items-start">
+                    <div class="bg-yellow-400 text-black text-center rounded-lg p-2 mr-4 flex-shrink-0">
+                        <div class="text-xs font-medium">JAN</div>
+                        <div class="text-lg font-bold">22</div>
+                    </div>
+                    <div class="flex-1">
+                        <h3 class="text-lg font-bold mb-1 text-yellow-600">Charity Fundraising Gala</h3>
+                        <p class="text-sm text-gray-500 mb-2">7:00 PM - 11:00 PM</p>
+                        <p class="text-gray-700 text-sm">Annual fundraising gala to support our community outreach programs.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Event 3 -->
+            <div class="bg-white rounded-lg shadow-lg p-4 mb-4">
+                <div class="flex items-start">
+                    <div class="bg-yellow-400 text-black text-center rounded-lg p-2 mr-4 flex-shrink-0">
+                        <div class="text-xs font-medium">FEB</div>
+                        <div class="text-lg font-bold">05</div>
+                    </div>
+                    <div class="flex-1">
+                        <h3 class="text-lg font-bold mb-1 text-yellow-600">Youth Leadership Summit</h3>
+                        <p class="text-sm text-gray-500 mb-2">9:00 AM - 5:00 PM</p>
+                        <p class="text-gray-700 text-sm">Empowering young leaders in our community through workshops and networking.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Event 4 -->
+            <div class="bg-white rounded-lg shadow-lg p-4 mb-4">
+                <div class="flex items-start">
+                    <div class="bg-yellow-400 text-black text-center rounded-lg p-2 mr-4 flex-shrink-0">
+                        <div class="text-xs font-medium">FEB</div>
+                        <div class="text-lg font-bold">14</div>
+                    </div>
+                    <div class="flex-1">
+                        <h3 class="text-lg font-bold mb-1 text-yellow-600">Valentine's Community Service</h3>
+                        <p class="text-sm text-gray-500 mb-2">1:00 PM - 6:00 PM</p>
+                        <p class="text-gray-700 text-sm">Spread love in the community by visiting elderly residents and distributing care packages.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Past Events Section -->
+        <div class="lg:col-span-1">
+            <h2 class="text-2xl font-bold mb-6 text-yellow-600 border-b-2 border-yellow-400 pb-2">Past Events</h2>
+            
+            <!-- Past Event 1 -->
+            <div class="bg-white rounded-lg shadow-lg p-4 mb-4">
+                <div class="flex items-start">
+                    <div class="bg-gray-400 text-white text-center rounded-lg p-2 mr-4 flex-shrink-0">
+                        <div class="text-xs font-medium">DEC</div>
+                        <div class="text-lg font-bold">20</div>
+                    </div>
+                    <div class="flex-1">
+                        <h3 class="text-lg font-bold mb-1 text-yellow-600">Christmas Charity Drive</h3>
+                        <p class="text-sm text-gray-500 mb-2">Successfully Completed</p>
+                        <p class="text-gray-700 text-sm">Distributed gifts and meals to over 500 families in need during the holiday season.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Past Event 2 -->
+            <div class="bg-white rounded-lg shadow-lg p-4 mb-4">
+                <div class="flex items-start">
+                    <div class="bg-gray-400 text-white text-center rounded-lg p-2 mr-4 flex-shrink-0">
+                        <div class="text-xs font-medium">NOV</div>
+                        <div class="text-lg font-bold">15</div>
+                    </div>
+                    <div class="flex-1">
+                        <h3 class="text-lg font-bold mb-1 text-yellow-600">Health & Wellness Fair</h3>
+                        <p class="text-sm text-gray-500 mb-2">Successfully Completed</p>
+                        <p class="text-gray-700 text-sm">Free health screenings and wellness workshops attended by 300+ community members.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Past Event 3 -->
+            <div class="bg-white rounded-lg shadow-lg p-4 mb-4">
+                <div class="flex items-start">
+                    <div class="bg-gray-400 text-white text-center rounded-lg p-2 mr-4 flex-shrink-0">
+                        <div class="text-xs font-medium">OCT</div>
+                        <div class="text-lg font-bold">28</div>
+                    </div>
+                    <div class="flex-1">
+                        <h3 class="text-lg font-bold mb-1 text-yellow-600">Environmental Clean-up Day</h3>
+                        <p class="text-sm text-gray-500 mb-2">Successfully Completed</p>
+                        <p class="text-gray-700 text-sm">Volunteers cleaned up local parks and beaches, collecting over 2 tons of waste.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Past Event 4 -->
+            <div class="bg-white rounded-lg shadow-lg p-4 mb-4">
+                <div class="flex items-start">
+                    <div class="bg-gray-400 text-white text-center rounded-lg p-2 mr-4 flex-shrink-0">
+                        <div class="text-xs font-medium">SEP</div>
+                        <div class="text-lg font-bold">12</div>
+                    </div>
+                    <div class="flex-1">
+                        <h3 class="text-lg font-bold mb-1 text-yellow-600">Back-to-School Supply Drive</h3>
+                        <p class="text-sm text-gray-500 mb-2">Successfully Completed</p>
+                        <p class="text-gray-700 text-sm">Provided school supplies and backpacks to 200+ underprivileged students.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

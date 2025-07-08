@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AHK Website</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+    <body class="bg-gray-50 m-0 font-sans">
+        <nav class="bg-black py-3 fixed top-0 w-full z-50">
+            <div class="container mx-auto flex flex-wrap justify-center">
+                <a href="#home" class="text-white hover:text-yellow-400 px-4 py-2 rounded transition-colors duration-200 font-medium">Home</a>
+                <a href="#about" class="text-white hover:text-yellow-400 px-4 py-2 rounded transition-colors duration-200 font-medium">About us</a>
+                <a href="#services" class="text-white hover:text-yellow-400 px-4 py-2 rounded transition-colors duration-200 font-medium">Our Services</a>
+                <a href="#partners" class="text-white hover:text-yellow-400 px-4 py-2 rounded transition-colors duration-200 font-medium">Partners</a>
+                <a href="#news" class="text-white hover:text-yellow-400 px-4 py-2 rounded transition-colors duration-200 font-medium">News & Events</a>
+            </div>
+        </nav>
+        <div class="pt-16">
+            {% block content %}{% endblock %}
+        </div>
+    </body>
+</html>

@@ -1,4 +1,100 @@
-{% extends "base.html" %}
-{% block content %}
-
-{% endblock %}
+<div class="container mx-auto px-4">
+    <div class="text-center max-w-3xl mx-auto mb-16">
+        <h2 class="text-3xl font-bold mb-6 text-yellow-600">Get in Touch</h2>
+        <p class="text-xl text-gray-700">Have questions or want to partner with us? Reach out today.</p>
+    </div>
+    
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+        <!-- Contact Form -->
+        <div class="bg-white dark:bg-gray-700 rounded-lg shadow-lg p-8">
+            <h3 class="text-2xl font-bold mb-6">Contact Us</h3>
+            <form action="/contact" method="POST" id="contactForm">
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
+                    <div>
+                        <label for="firstName" class="block mb-2 font-medium">First Name*</label>
+                        <input type="text" id="firstName" name="firstName" class="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-400 text-base dark:bg-gray-800" required>
+                    </div>
+                    <div>
+                        <label for="lastName" class="block mb-2 font-medium">Last Name*</label>
+                        <input type="text" id="lastName" name="lastName" class="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-400 text-base dark:bg-gray-800" required>
+                    </div>
+                </div>
+                <div class="mb-4">
+                    <label for="email" class="block mb-2 font-medium">Email*</label>
+                    <input type="email" id="email" name="email" class="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-400 text-base dark:bg-gray-800" required>
+                </div>
+                <div class="mb-4">
+                    <label for="school" class="block mb-2 font-medium">School/Organization</label>
+                    <input type="text" id="school" name="school" class="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-400 text-base dark:bg-gray-800">
+                </div>
+                <div class="mb-4">
+                    <label for="subject" class="block mb-2 font-medium">Subject*</label>
+                    <select id="subject" name="subject" class="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-400 text-base dark:bg-gray-800" required>
+                        <option value="">Select an option</option>
+                        <option value="teacher_training">Teacher Training</option>
+                        <option value="competition">Competition Participation</option>
+                        <option value="partnership">Partnership Opportunity</option>
+                        <option value="resources">Resources Access</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <div class="mb-6">
+                    <label for="message" class="block mb-2 font-medium">Message*</label>
+                    <textarea id="message" name="message" rows="5" class="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-400 text-base dark:bg-gray-800" required></textarea>
+                </div>
+                <button type="submit" class="w-full bg-yellow-400 hover:bg-yellow-500 text-black py-3 rounded-md transition-all font-medium shadow-lg hover:shadow-xl">
+                    Send Message
+                </button>
+            </form>
+        </div>
+        
+        <!-- Contact Info -->
+        <div>
+            <div class="bg-white dark:bg-gray-700 rounded-lg shadow-lg p-8 mb-8">
+                <h3 class="text-2xl font-bold mb-6">Contact Information</h3>
+                <div class="space-y-4">
+                    <div class="flex items-start">
+                        <div class="text-yellow-600 mr-4 mt-1">
+                            <i class="fas fa-map-marker-alt text-xl"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold">Address</h4>
+                            <p>Level 9 Core C<br>Cyberport 3<br>Hong Kong</p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-start">
+                        <div class="text-yellow-600 mr-4 mt-1">
+                            <i class="fas fa-phone text-xl"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold">Phone</h4>
+                            <p>(+852) 5797 2589</p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-start">
+                        <div class="text-yellow-600 mr-4 mt-1">
+                            <i class="fas fa-envelope text-xl"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold">Email</h4>
+                            <p>random@example-email.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="bg-white dark:bg-gray-700 rounded-lg shadow-lg p-8">
+                <h3 class="text-2xl font-bold mb-6">Subscribe to Our Newsletter</h3>
+                <p class="mb-6">Stay updated with our latest programs, resources, and events.</p>
+                <form id="newsletterForm" class="flex flex-col sm:flex-row gap-4">
+                    <input type="email" placeholder="Your email address" class="flex-grow px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-400 text-base dark:bg-gray-800" required>
+                    <button type="submit" class="bg-yellow-400 hover:bg-yellow-500 text-black px-6 py-2 rounded-md transition-all whitespace-nowrap font-medium shadow-lg hover:shadow-xl">
+                        Subscribe
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
